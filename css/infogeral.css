@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Ohno Blazeface';
+    src: url('webfonts/Ohno Blazeface 72 Point.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'HelveticaNeue';
+    src: url('webfonts/HelveticaNeue-01 2.ttf');
+    font-weight: normal;
+    font-style:normal;
+  }
+  
+  *, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('../img/black_cursor.png'), auto;
+    font-family: 'HelveticaNeue';
+    color: black;
+  }
+
+  body{
+    background-image: url('img/fundo.png');
+    background-size: 100% 100%;
+  }
+
+  #fundo{
+      position: absolute;
+      display: flex;
+      width: 100%;
+      z-index: -10;
+  }
+
+  #fundo img{
+width: 100%;;
+  }
+
+  #logo{
+    position: fixed;
+      width: 10%;
+      display: flex;
+      margin: 2%;
+      margin-top: 5px;
+      
+  }
+
+  #logo img{
+    width: 100%;
+    
+}
+
+
+
+
+
+
+footer {
+
+    display: flex;
+    width: 94vw;
+    
+    margin: 40px;
+    margin-top: 200px;
+    padding: 0 4px;
+    
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+  .fot1{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .fotline{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    padding: 20px;
+    padding-left: 0;
+  }
+.caixafooter{
+  width: 15vw;
+}
+  #margem{
+    margin-left: 40px;
+  }
+
+  .fot2{
+    width: 20%;
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: 23px;
+letter-spacing: 0.015em;
+  }
+
+
+
+

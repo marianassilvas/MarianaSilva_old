@@ -1,0 +1,112 @@
+.navbar {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+   position:absolute;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    justify-content: space-between;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+   
+    
+  }
+
+
+  .navbar li {
+    list-style-type: none;
+  flex-direction: row;
+    display: inline-block;
+    padding: 0px 15px;
+  }
+  
+  
+  .navbar a:link {
+    color: rgb(0, 0, 0);
+  text-decoration: none;
+  }
+  
+  /* visited link */
+  .navbar a:visited {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* mouse over link */
+  .navbar a:hover {
+    color: rgba(49, 32, 143, 0.747);
+  }
+  
+  /* selected link */
+  .navbar a:active {
+    color: rgba(49, 32, 143, 0.747);
+  }
+  
+
+  main{
+    width: 100%;
+    border-top: 1px solid black;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    justify-content: flex-start;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+  .banner{
+      width: 100%;
+    margin-top: 148.9px;
+margin-left: 15%;
+margin-right: 15%;
+border-left: 1px solid black;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+
+display: flex;
+flex-direction: column;
+  }
+
+#Mariana {
+    padding: 50px;
+    
+    letter-spacing: 5px;
+    font-family: 'Ohno Blazeface';
+    font-size: 3em;
+    list-style-type: none;
+    
+   
+}
+
+.bloco {
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.bloco h1{
+    width: 60%;
+    border-right: 1px solid black;
+   
+}
+#flor{
+    width:40%;
+    
+}
+
+#flor img{
+    width:20%;
+    
+}
