@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'Ohno Blazeface';
     src: url('webfonts/Ohno Blazeface 72 Point.ttf');
@@ -17,13 +19,15 @@
     padding: 0;
     box-sizing: border-box;
     cursor: url('../img/black_cursor.png'), auto;
-    font-family: 'HelveticaNeue';
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 200;
     color: black;
   }
 
   body{
     background-image: url('img/fundo.png');
     background-size: 100% 100%;
+   
   }
 
   #fundo{
@@ -31,10 +35,12 @@
       display: flex;
       width: 100%;
       z-index: -10;
+      border-image-repeat: repeat;
   }
 
   #fundo img{
-width: 100%;;
+width: 100%;
+border-image-repeat: repeat;
   }
 
   #logo{
