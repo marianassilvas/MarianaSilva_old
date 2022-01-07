@@ -1,60 +1,61 @@
-
+@font-face {
+  font-family: 'Ohno Blazeface';
+  src: url('webfonts/Ohno Blazeface 72 Point.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'Ohno Blazeface';
-    src: url('webfonts/Ohno Blazeface 72 Point.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'HelveticaNeue';
-    src: url('webfonts/HelveticaNeue-01 2.ttf');
-    font-weight: normal;
-    font-style:normal;
-  }
-  
-  *, *:after, *:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    cursor: url('../img/black_cursor.png'), auto;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 200;
-    color: black;
-  }
+  font-family: 'HelveticaNeue';
+  src: url('webfonts/HelveticaNeue-01 2.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  body{
-    background-image: url('img/fundo.png');
-    background-size: 100% 100%;
-   
-  }
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url('../img/black_cursor.png'), auto;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  color: black;
+}
 
-  #fundo{
-      position: absolute;
-      display: flex;
-      width: 100%;
-      z-index: -10;
-      border-image-repeat: repeat;
-  }
+body {
+  background-image: url('img/fundo.png');
+  background-size: 100% 100%;
+  border: 1px solid black;
 
-  #fundo img{
-width: 100%;
-border-image-repeat: repeat;
-  }
+}
 
-  #logo{
-    position: fixed;
-      width: 10%;
-      display: flex;
-      margin: 2%;
-      margin-top: 5px;
-      
-  }
+#fundo {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  z-index: -10;
+  border-image-repeat: repeat;
+}
 
-  #logo img{
-    width: 100%;
-    
+#fundo img {
+  width: 100%;
+  border-image-repeat: repeat;
+}
+
+#logo {
+  position: fixed;
+  width: 10%;
+  display: flex;
+  margin: 2%;
+  margin-top: 5px;
+
+}
+
+#logo img {
+  width: 100%;
+
 }
 
 
@@ -63,51 +64,75 @@ border-image-repeat: repeat;
 
 
 footer {
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  width: 100%;
 
-    display: flex;
-    width: 94vw;
-    
-    margin: 40px;
-    margin-top: 200px;
-    padding: 0 4px;
-    
 
-    justify-content: space-between;
-    align-items: center;
-  }
+  margin-top: 200px;
 
 
 
-  .fot1{
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 
-  .fotline{
-    display: flex;
-    /* justify-content: space-between; */
-    flex-direction: row;
-    padding: 20px;
-    padding-left: 0;
-  }
-.caixafooter{
+  border: 1px solid black;
+}
+
+
+
+.fot1 {
+  padding-left: 15%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white;
+
+}
+
+.fotline {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  padding: 20px;
+  padding-left: 0;
+}
+
+.caixafooter {
   width: 15vw;
 }
-  #margem{
-    margin-left: 40px;
-  }
 
-  .fot2{
-    width: 20%;
-    font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-line-height: 23px;
-letter-spacing: 0.015em;
-  }
+#margem {
+  margin-left: 40px;
+}
 
+.fot2 {
+  width: 20%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+  letter-spacing: 0.015em;
+}
 
+.ohno {
+  font-family: 'Ohno Blazeface';
+  letter-spacing: 2px;
 
+}
 
+.fot3 {
+  padding-right: 15%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  width: 250px;
+}
+
+.fot3 img {
+  width: 100%;
+}

@@ -1,10 +1,10 @@
 .navbar {
-    
+
     top: 0;
     left: 0;
     width: 100%;
     height: 150px;
-   position:absolute;
+    position: absolute;
     flex-direction: row;
     /* flex-wrap: nowrap; */
     align-items: center;
@@ -18,52 +18,51 @@
     border-bottom: 1px solid black;
     font-weight: 600;
     letter-spacing: 5px;
-   
-    
-  }
+
+}
 
 
-  .navbar li {
+.navbar li {
     list-style-type: none;
-  flex-direction: row;
+    flex-direction: row;
     display: inline-block;
     padding: 0px 15px;
-  }
-  
-  
-  .navbar a:link {
-    color: rgb(0, 0, 0);
-  text-decoration: none;
-  font-weight: regular;
-  }
-  
-  /* visited link */
-  .navbar a:visited {
-    color: rgb(0, 0, 0);
-  }
-  
-  /* mouse over link */
-  .navbar a:hover {
-    color: rgba(49, 32, 143, 0.747);
-    text-underline: 1px solid black;
-  }
-  
-  /* selected link */
-  .navbar a:active {
-    color: rgba(49, 32, 143, 0.747);
-  }
+}
 
-  #line{
-width: 30px;
-      height: 0;
-      border: 0.5px solid black;
-  }
-  
 
-  main{
+.navbar a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: regular;
+}
+
+/* visited link */
+.navbar a:visited {
+    color: rgb(0, 0, 0);
+}
+
+/* mouse over link */
+.navbar a:hover {
+    color: rgba(49, 32, 143, 0.747);
+
+}
+
+/* selected link */
+.navbar a:active {
+    color: rgba(49, 32, 143, 0.747);
+}
+
+#line {
+    width: 30px;
+    height: 0;
+    border: 0.5px solid black;
+}
+
+
+main {
     width: 100%;
     border-top: 1px solid black;
-    position:relative;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-content: space-around;
@@ -71,32 +70,34 @@ width: 30px;
     justify-content: flex-start;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    
+
 
 }
 
-  .banner{
-      width: 100%;
+.banner {
+    width: 100%;
     margin-top: 148.9px;
-margin-left: 15%;
-margin-right: 15%;
-border-left: 1px solid black;
-border-right: 1px solid black;
-border-bottom: 1px solid black;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 
-display: flex;
-flex-direction: column;
-  }
+    display: flex;
+    flex-direction: column;
+}
 
 #Mariana {
     padding: 50px;
-    
+
     letter-spacing: 5px;
     font-family: 'Ohno Blazeface';
     font-size: 3em;
     list-style-type: none;
-    
-   
+    width: 60%;
+    border-right: 1px solid black;
+
+
 }
 
 .bloco {
@@ -104,28 +105,25 @@ flex-direction: column;
     border-bottom: 1px solid black;
     display: flex;
     flex-direction: row;
-   
+
 }
 
-.bloco h1{
-    width: 60%;
-    border-right: 1px solid black;
-   
-}
-#flor{
+
+
+#flor {
     width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-#flor img{
-    width:20%;
-    
+#flor img {
+    width: 20%;
+
 }
 
-.bloco2{
+.bloco2 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -134,28 +132,54 @@ flex-direction: column;
     padding: 20px;
 }
 
-.topics p{
+
+.topics {
+    width: auto;
+    transform: translateX(100%);
+    /* Animation start out of the screen */
+
+    /* Add the animation */
+    animation: move 30s linear infinite
+        /* infinite make reapeat the animation indefinitely */
+    ;
+}
+
+@keyframes move {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.topics p {
     font-weight: bold;
 }
 
-#fotoperfil{
+
+
+#fotoperfil {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-right: 1px solid black;
-    
+
 }
 
-#fotoperfil img{
+#fotoperfil img {
     width: 100%;
 
     object-fit: fill;
-
-    
+    filter: hue-rotate(30deg);
+    transition: 0.3s;
 }
 
-#brincadeiras{
+#fotoperfil img:hover {
+    filter: hue-rotate(0deg);
+    transition: 0.3s;
+
+}
+
+#brincadeiras {
     width: 20%;
     border-right: 1px solid black;
     display: flex;
@@ -163,15 +187,16 @@ flex-direction: column;
     justify-content: center;
     flex-direction: column;
     justify-content: space-evenly;
-    
+
 }
-#brincadeiras img{
+
+#brincadeiras img {
     width: 60%;
 
     object-fit: fill;
 }
 
-#enche{
+#enche {
     width: 30%;
     display: flex;
     align-items: center;
@@ -179,21 +204,93 @@ flex-direction: column;
     flex-direction: column;
     justify-content: space-evenly;
 }
-#enche img{
+
+#enche img {
     width: 100%;
     object-fit: fill;
-    padding: 0 10px 0 10px;
+    padding: 0 10px 0;
 
-    
+
 }
 
+.aboutme {
+    width: 50%;
 
-/* #topicosredes{
-    width: 40%;
-    padding: 50px;
-    letter-spacing: 5px;
-    font-size: 1em;
     border-right: 1px solid black;
-    
+    line-height: 1.6;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
 }
- */
+
+.aboutme h1 {
+    padding: 70px 70px 10px 70px;
+
+}
+
+.aboutme p {
+    padding: 30px 70px 10px 70px;
+    padding-bottom: 5px;
+}
+
+#alinha {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+
+
+}
+
+.imagemprojeto {
+    width: 100%;
+    height: 20%;
+    bottom: 0px;
+
+}
+
+.imagemprojeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.ondesou {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.onde {
+
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 70px 40px 50px 40px;
+
+}
+
+.onde img {
+    width: 100%;
+
+    object-fit: fill;
+    padding: 10px;
+}
+
+.textonde {
+    width: 100%;
+    padding: 50px;
+    line-height: 1.6;
+    border-top: 1px solid black;
+
+}
+
+#softdiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+
+}
