@@ -68,8 +68,7 @@ main {
     align-content: space-around;
     align-items: center;
     justify-content: flex-start;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+
 
 
 }
@@ -81,7 +80,7 @@ main {
     margin-right: 15%;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    
 
     display: flex;
     flex-direction: column;
@@ -120,6 +119,12 @@ main {
 
 #flor img {
     width: 20%;
+
+}
+
+#flor:hover {
+    transform: rotate(900deg);
+    transition: 5s;
 
 }
 
@@ -245,7 +250,7 @@ main {
 .imagemprojeto {
     width: 100%;
     height: 20%;
-    bottom: 0px;
+    
 
 }
 
@@ -294,3 +299,128 @@ main {
     padding: 70px;
 
 }
+
+/* telemovel */
+@media screen and (max-width: 600px) {
+    #Mariana {
+        font-size: 1.5em;
+    }
+
+    .banner {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #flor img {
+        width: 50%;
+    }
+
+    .bloco3 {
+        flex-direction: column;
+    }
+
+    .aboutme {
+        width: 100%;
+        border-right: 0px;
+    }
+
+    .aboutme h1 {
+        padding: 50px;
+        padding-bottom: 20px;
+        font-size: 1.5em;
+    }
+
+    .aboutme p {
+        padding: 50px;
+        padding-top: 0px;
+        font-size: 1em;
+    }
+
+    .onde{
+        width: 100%;
+    }
+
+    .ondesou{
+        width: 100%;
+    }
+
+    #alinha{
+        padding-bottom:0px;
+    }
+    .imagemprojeto img{
+        border-bottom: 1px solid black;
+    }
+
+    .textonde{
+        border-top: 0px;
+    }
+
+    #softdiv{
+        padding: 50px;
+    }
+
+
+}
+
+/* tablets: */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    #Mariana {
+        font-size: 1.7em;
+    }
+    .banner {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #flor img {
+        width: 50%;
+    }
+
+    .bloco3 {
+        flex-direction: column;
+    }
+
+    .aboutme {
+        width: 100%;
+        border-right: 0px;
+    }
+
+    .aboutme h1 {
+        padding: 50px;
+        padding-bottom: 20px;
+        font-size: 1.5em;
+    }
+
+    .aboutme p {
+        padding: 50px;
+        padding-top: 0px;
+        font-size: 1em;
+    }
+
+    .onde{
+        width: 100%;
+    }
+
+    .ondesou{
+        width: 100%;
+    }
+
+    #alinha{
+        padding-bottom:0px;
+    }
+    .imagemprojeto img{
+        border-bottom: 1px solid black;
+    }
+
+    .textonde{
+        border-top: 0px;
+    }
+
+    #softdiv{
+        padding: 50px;
+    }
+
+}
+
+/* desktop computer */
+@media screen and (min-width: 768px) {}
