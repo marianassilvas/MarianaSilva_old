@@ -1,19 +1,19 @@
-/*@font-face {
+@font-face {
   font-family: 'Ohno Blazeface', format("truetype");
   src: url('webfonts/Ohno Blazeface 72 Point.ttf');
   font-weight: normal;
   font-style: normal;
 }
-} */
 
- @font-face {
+
+/*  @font-face {
   font-family: 'ohno_blazeface72_point';
   src: url('webfonts/ohno_blazeface_72_point-webfont.woff2') format('woff2'),
        url('webfonts/ohno_blazeface_72_point-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
- }
+ } */
 
 @font-face {
   font-family: 'HelveticaNeue', format("truetype");
