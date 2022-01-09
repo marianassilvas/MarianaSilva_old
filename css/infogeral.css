@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Ohno Blazeface';
+  font-family: 'Ohno Blazeface', format("truetype");
   src: url('webfonts/Ohno Blazeface 72 Point.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
+  font-family: 'HelveticaNeue', format("truetype");
   src: url('webfonts/HelveticaNeue-01 2.ttf');
   font-weight: normal;
   font-style: normal;
